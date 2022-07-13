@@ -1,11 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from coupang import ReObject
+from ReObject import ReObject
 
 url = "https://www.coupang.com/np/search?component=&q=%EB%85%B8%ED%8A%B8%EB%B6%81"
 
-dr = webdriver.Chrome("/Users/theuniongraphix/Desktop/chromedriver")
+dr = webdriver.Chrome("chromedriver.exe")
 dr.get(url)
 myData = dr.page_source
 

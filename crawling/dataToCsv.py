@@ -2,9 +2,10 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
+
 url = "https://finance.naver.com/sise/sise_market_sum.nhn?sosok=0"
 
-fName = "test1.csv"
+fName = "test2.csv"
 f = open(fName,"w",encoding="utf-8-sig", newline="")
 writer = csv.writer(f)
 res = requests.get(url)
